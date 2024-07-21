@@ -6,12 +6,18 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .Sessao-Login{
   /* border: 2px solid red; */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Box-Logo{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
 }
 .Logo{
   transition: transform 0.3s ease;
@@ -21,13 +27,18 @@
 }
 .Box-Login{
   /* border: 2px solid red; */
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 400px;
+  width: 400px;
+  box-shadow: 10px 10px 32px -14px rgba(0,0,0,0.75)
 }
 .Box-Inputs{
   /* border: 2px solid red; */
+  padding-right: 10px;
+  padding-left: 10px;
 }
-.Box-Input-Usuarios{
-  /* border: 2px solid red; */
-}
+
 input{
  border: none;
  border-bottom: 2.5px solid black;
@@ -35,6 +46,7 @@ input{
  width: 100%;
  transition: 0.3s ease;
  margin-top: 15px;
+ background-color: #ffffff;
 }
 input:focus{
   border-bottom-color: #2D8034 ;
