@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
-import './Buttons.css'
+import {Main_Buttons, Styled_buttons} from './Buttons.js'
 
-const Buttons = ({Login}) => {
+
+const Buttons = ({Texto}) => {
   return(
-    <main className='Buttons'>
+    <Main_Buttons className='Buttons'>
       <Link to='/Home'>
-        <button>{Login}</button>
+        <Styled_buttons type='submit'>{Texto}</Styled_buttons>
       </Link>
       
-    </main>
+    </Main_Buttons>
     
   )
 }

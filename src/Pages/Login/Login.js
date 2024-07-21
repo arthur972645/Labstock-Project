@@ -47,7 +47,7 @@ export const Box_Input_Senha = styled.div`
 `
 export const Input = styled.input`
 border: none;
- border-bottom: 2.5px solid black;
+ border-bottom: 2px solid black;
  outline: none;
  width: 100%;
  transition: 0.3s ease;

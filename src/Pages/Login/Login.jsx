@@ -23,7 +23,7 @@ const Login = () => {
           </Box_Inputs>
           <div className="Box-Btn">
             <Buttons
-              Login="Login"
+              Texto="Login"
             />
           </div>
         </Box_Login>

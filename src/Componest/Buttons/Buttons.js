@@ -1,10 +1,12 @@
-.Buttons{
-  /* border: 2px solid red; */
+import styled from 'styled-components';
+
+export const Main_Buttons = styled.main`
   display: flex;
   justify-content: center;
   margin-top: 25px;
-}
-button{
+`
+
+export const Styled_buttons = styled.button`
   width: 200px;
   height: 40px;
   border: none;
@@ -15,8 +17,9 @@ button{
   font-size: 15px;
   font-weight: 700;
   transition: 0.3s ease;
-}
-button:hover{
+
+  &:hover{
   transform: scale(1.1);
   background-color: #2D8034;
-}
+  }
+`

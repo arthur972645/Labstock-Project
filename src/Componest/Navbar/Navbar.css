@@ -1,0 +1,42 @@
+
+
+
+.Sessao-navbar{
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  ;
+}
+.Box-navbar{
+  /* border: 2px solid red; */
+  background-image: url('../../assets/Home/DETALHES.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #3A3132;
+  border-radius: 20px;
+  width: 1700px;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+}
+.Box-caminhos{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1300px;
+}
+p{
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+p:hover{
+  color: #64BA6B;
+}
+
+p:focus{
+  color: #64BA6B;
+}
