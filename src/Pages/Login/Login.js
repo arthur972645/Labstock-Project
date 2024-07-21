@@ -32,6 +32,10 @@ export const Box_Logo = styled.div`
 `
 export const Logo = styled.img`
   transition: transform 0.3s ease;
+
+  &:hover{
+   transform: scale(1.1);
+  }
 `
 
 export const Box_Inputs = styled.div`
