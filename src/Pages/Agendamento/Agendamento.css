@@ -1,22 +1,11 @@
 /* index.css ou App.css */
-
-
-
-.Agendamento{
-  background-image: url('../../assets/Agendamento/Group 30.png');
-  background-position: right;
-  background-repeat: no-repeat;  
-  
-}
-.Parte_do_meio{
-  background-image: url('../../assets/Agendamento/Group 29.png');
-  background-position: start;
-  background-repeat: no-repeat;  
-  background-size: 300px;
-  display: flex;
-  align-items: center;
-  /* border: 2px solid red; */
-  height: 86vh;
+.Fundo_imagem_agendamento1{
+  height: 100vh;
+  background-image: url('../../assets/Agendamento/DETALHES (1).png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;  
 }
 
 .formulario-container {
@@ -30,13 +19,14 @@
 
 .title01{
   color: #68BD6F;
-  font-size: 48px;
+  font-size: 70px;
 }
 .subTitle01{
   color: black;
   margin-top: 20px;
   font-style: normal;
   font-weight:400;
+  font-size: 17px;
 }
 .formulario {
   display: flex;

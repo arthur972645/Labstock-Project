@@ -1,5 +1,5 @@
 import Imagem_Logo from '../../assets/Login/LOGO-LABSTOCK (1).png'
-import Buttons from '../../Componest/Buttons/Buttons'
+import Buttons from '../../Componest/Buttons/Buttons.jsx'
 import {Img_Fundo ,Sessao_Login, Box_Login, Box_Logo, Logo, Box_Inputs, Box_Input_Senha, Input, Paragrafo} from './Login.js'
 
 
