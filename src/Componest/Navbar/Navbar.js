@@ -21,6 +21,7 @@
     padding: 10px;
     margin: 0 auto;
     margin-top: 10px;
+    box-shadow: 9px 8px 13px -5px rgba(0,0,0,0.52);
   `
 
   export const Box_caminho = styled.div`

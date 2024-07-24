@@ -4,13 +4,12 @@
   background-image: url('../../assets/Agendamento/DETALHES (1).png');
   background-position: center;
   background-size: 100%;
-  background-repeat: no-repeat;
-  display: block;  
+  height: 99vh;
+  background-repeat: no-repeat;  
 }
 
 .formulario-container {
   /* border: 2px solid red; */
-  font-family: 'Montserrat', sans-serif;  
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
