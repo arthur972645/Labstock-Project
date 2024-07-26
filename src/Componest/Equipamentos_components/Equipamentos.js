@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 const Cores = {
     Branco: '#ffff',
     Verde: '#2D8034',
@@ -8,29 +9,35 @@ const Cores = {
 }
 
 export const EquipamentosContainer = styled.section`
-    font-family: 'Montserrat', sans-serif;
-   padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
+    
 `
 export const TituloEquipamento = styled.h1`
     color: ${Cores.Verde};
     font-size: 50px;
-    padding-left: 20px;
-    margin-left: 30px;
-    margin-bottom: 15px;
+    align-items: center;
 `
 export const DescricaoEquipamento = styled.p`
-    padding-left: 20px;
     font-style: normal;
-    margin-left: 30px;
+    width: 1200px;
+`
+export const TextoEquipamentos = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 19%;
+    margin-top: 3%;
+`
+export const BoxEquipametos = styled.div`
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `
 export const BoxTrioEquipamentos = styled.div`
     background-color: ${Cores.Branco};
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr  ;
-    margin-top: 20px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 `
 export const CardEquipamento = styled.section`
     background-color: ${Cores.Branco};
@@ -43,6 +50,10 @@ export const CardEquipamento = styled.section`
     justify-content: center;
     box-shadow: 0 0 8px 1px ${Cores.Sombra};
     border-radius: 30px;
+`
+export const ImgEquipamento = styled.img`
+    width: 210px;
+    border-radius: 30px
 `
 export const NomeEquipamento = styled.h1`
     margin: 5px;
@@ -72,8 +83,4 @@ export const DisponibilidadeEquipamento = styled.section`
     padding-bottom: 12px;
     border-radius: 10px;
     width: 190px;
-`
-export const ImgEquipamento = styled.img`
-    width: 210px;
-    border-radius: 30px
 `

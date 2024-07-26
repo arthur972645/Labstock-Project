@@ -10,7 +10,6 @@
   `
 
   export const Box_navbar = styled.section`
-    background-image: url(${Detalhe_navbar});
     background-position: right;
     background-repeat: no-repeat;
     background-color: #3A3132;

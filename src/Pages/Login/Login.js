@@ -21,10 +21,7 @@ export const Sessao_Login = styled.section`
 
 export const Box_Login = styled.div`
  background-color: #ffffff;
-  border-radius: 15px;
-  height: 400px;
-  width: 400px;
-  box-shadow: 10px 10px 32px -14px rgba(0,0,0,0.75)
+  
 `
 export const Box_Logo = styled.div`
   display: flex;
@@ -52,6 +49,7 @@ border: none;
  width: 100%;
  transition: 0.3s ease;
  margin-top: 15px;
+ opacity: 30%;
  background-color: #ffffff;
 
  &:hover{
