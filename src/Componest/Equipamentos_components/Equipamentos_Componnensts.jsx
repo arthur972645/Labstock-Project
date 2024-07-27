@@ -3,7 +3,7 @@ import {
     EquipamentosContainer, 
     TituloEquipamento, 
     DescricaoEquipamento, 
-    BoxTrioEquipamentos, 
+    BoxEquipamentos, 
     CardEquipamento, 
     ImgEquipamento, 
     NomeEquipamento, 
@@ -33,7 +33,7 @@ const Equipamento = () => {
         <EquipamentosContainer>
             <TituloEquipamento>EQUIPAMENTOS</TituloEquipamento>
             <DescricaoEquipamento>EQUIPAMENTOS é uma página direcionada aos equipamentos encontrados no laboratório, além de descrever sua funcionalidade e quais estão disponíveis.</DescricaoEquipamento>
-            <BoxTrioEquipamentos>
+            <BoxEquipamentos>
                 {datas.map((data) => (
                     <CardEquipamento key={data.id}>
                         <ImgEquipamento src={data.src} alt={data.alt} />
@@ -42,7 +42,7 @@ const Equipamento = () => {
                         <DisponibilidadeEquipamento>{data.disponivelEquipe}</DisponibilidadeEquipamento>
                     </CardEquipamento>
                 ))}
-            </BoxTrioEquipamentos>
+            </BoxEquipamentos>
         </EquipamentosContainer>
     );
 };

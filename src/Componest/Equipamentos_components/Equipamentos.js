@@ -9,28 +9,31 @@ const Cores = {
 
 export const EquipamentosContainer = styled.section`
     font-family: 'Montserrat', sans-serif;
-   padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
 `
 export const TituloEquipamento = styled.h1`
     color: ${Cores.Verde};
     font-size: 50px;
-    padding-left: 20px;
-    margin-left: 30px;
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: end;
+    width: 530px;
+    margin-top: 25px;
 `
 export const DescricaoEquipamento = styled.p`
-    padding-left: 20px;
-    font-style: normal;
-    margin-left: 30px;
+  font-style: normal;
+  display: flex;
+  justify-content:start;
+  margin-left: 100px;
+  margin-top: 10px;
+    
 `
-export const BoxTrioEquipamentos = styled.div`
+export const BoxEquipamentos = styled.div`
     background-color: ${Cores.Branco};
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+ 
     margin-top: 20px;
-    padding-left: 20px;
+    
 `
 export const CardEquipamento = styled.section`
     background-color: ${Cores.Branco};

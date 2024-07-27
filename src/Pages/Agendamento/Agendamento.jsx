@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import Navbar from '../../Componest/Navbar/Navbar.jsx'
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import './Agendamento.css';
 
 const Agendamento = () => {
