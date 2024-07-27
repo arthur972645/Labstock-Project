@@ -1,7 +1,6 @@
 /* index.css ou App.css */
 .Fundo_imagem_agendamento1{
   height: 100vh;
-  background-image: url('../../assets/Agendamento/DETALHES (1).png');
   background-position: center;
   background-size: 100%;
   height: 99vh;
@@ -17,7 +16,7 @@
 }
 
 .title01{
-  color: #68BD6F;
+  color: #2D8034;
   font-size: 70px;
 }
 .subTitle01{

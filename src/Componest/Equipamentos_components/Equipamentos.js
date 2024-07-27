@@ -7,34 +7,34 @@ const Cores = {
     Sombra: '#0000002d'
 }
 
-export const EquipamentosContainer = styled.section`
-    font-family: 'Montserrat', sans-serif;
-`
+export const EquipamentosContainer = styled.section``;
+
 export const TituloEquipamento = styled.h1`
     color: ${Cores.Verde};
     font-size: 50px;
-    display: flex;
-    justify-content: end;
-    width: 530px;
-    margin-top: 25px;
-`
+    align-items: center;
+`;
+
 export const DescricaoEquipamento = styled.p`
-  font-style: normal;
-  display: flex;
-  justify-content:start;
-  margin-left: 100px;
-  margin-top: 10px;
-    
-`
+    font-style: normal;
+    width: 1200px;
+`;
+
+export const TextoEquipamentos = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 19%;
+    margin-top: 3%;
+`;
+
 export const BoxEquipamentos = styled.div`
     background-color: ${Cores.Branco};
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 50px;
- 
-    margin-top: 20px;
-    
-`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`;
+
 export const CardEquipamento = styled.section`
     background-color: ${Cores.Branco};
     width: 360px;
@@ -46,13 +46,20 @@ export const CardEquipamento = styled.section`
     justify-content: center;
     box-shadow: 0 0 8px 1px ${Cores.Sombra};
     border-radius: 30px;
-`
+`;
+
+export const ImgEquipamento = styled.img`
+    width: 210px;
+    border-radius: 30px;
+`;
+
 export const NomeEquipamento = styled.h1`
     margin: 5px;
     text-align: center;
     font-size: 24px;
     color: ${Cores.Marrom};
-`
+`;
+
 export const FuncaoEquipamento = styled.p`
     text-align: center;
     font-size: 14px;
@@ -62,7 +69,8 @@ export const FuncaoEquipamento = styled.p`
     padding-right: 15px;
     color: ${Cores.Marrom};
     height: 70px;
-`
+`;
+
 export const DisponibilidadeEquipamento = styled.section`
     text-align: center;
     font-size: 13px;
@@ -75,8 +83,4 @@ export const DisponibilidadeEquipamento = styled.section`
     padding-bottom: 12px;
     border-radius: 10px;
     width: 190px;
-`
-export const ImgEquipamento = styled.img`
-    width: 210px;
-    border-radius: 30px
-`
+`;
