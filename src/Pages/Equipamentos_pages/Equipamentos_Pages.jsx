@@ -1,13 +1,17 @@
-import Navbar from "../../Componest/Navbar/Navbar.jsx"
-import Equipamentos from "../../Componest/Equipamentos_components/Equipamentos_Componnensts.jsx"
-
+import React from "react";
+import Navbar from "../../Componest/Navbar/Navbar.jsx";
+import Equipamentos from "../../Componest/Equipamentos_components/Equipamentos_Componnensts.jsx";
+import { SessaoEquipamentos } from "./Equipamentos.js"; // Importando os componentes estilizados
 
 const Equipamentos_P = () => {
   return (
-    <main className="Pagina_equipamentos">
-      <Navbar/>
-      <Equipamentos/>
-    </main>
-  )
-}
-export default Equipamentos_P
+    <>
+      <Navbar />
+      <SessaoEquipamentos>
+        <Equipamentos />
+      </SessaoEquipamentos>
+    </>
+  );
+};
+
+export default Equipamentos_P;

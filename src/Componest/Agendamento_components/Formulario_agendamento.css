@@ -1,0 +1,76 @@
+.title01{
+  color: #2D8034 !important;
+  font-size: 48px;
+}
+.subTitle01 {
+  font-size: 17px;
+  font-weight: 400 !important; /* Força a aplicação do estilo */
+}
+.formulario-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.formulario {
+  /* border: 2px solid red ; */
+  padding-top: 15px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: 60vh;
+  margin: 0;
+}
+
+.formulario label {
+  font-weight: 500;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+  padding: 10px; 
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.horarios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horario {
+  width: 45%; 
+}
+.sessao_btn{
+  display: flex;
+  justify-content: center;
+}
+.Button_agendamento{
+  background-color: #194d26;
+  color: white;
+  font-weight: 700;
+  width: 90% !important;
+  height: 40px;
+  transition: 0.3s ease;
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.Button_agendamento:hover {
+  transform: scale(1.1);
+  background-color: #2D8034;
+
+}
+.mensagem-enviada {
+  text-align: center;
+  padding: 20px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}

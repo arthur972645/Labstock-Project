@@ -179,7 +179,7 @@ const Registro = () => {
         relacionadas com as atividades realizadas no laboratório como, data da
         utilização e materiais utilizados.
       </h4>
-      <form onSubmit={handleSubmit} className="formulario">
+      <form onSubmit={handleSubmit} className="formulario_registro">
         <label>
           Nome do responsável pelo agendamento do laboratório:
           <input
@@ -411,7 +411,11 @@ const Registro = () => {
           )}
         </label>
         <br />
-        <button type="submit">Enviar</button>
+        <div className="sessao_btn_registro">
+          <button className="Button_registro" type="submit">
+            Enviar
+          </button>
+        </div>
       </form>
     </div>
   );

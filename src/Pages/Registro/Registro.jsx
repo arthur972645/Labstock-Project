@@ -1,12 +1,17 @@
-import Navbar from "../../Componest/Navbar/Navbar.jsx"
-import Formulario_Registro from "../../Componest/Registrp_componentes/Registro_Componentes"
+import React from "react";
+import Navbar from "../../Componest/Navbar/Navbar.jsx";
+import Formulario_Registro from "../../Componest/Registrp_componentes/Registro_Componentes";
+import { SessaoRegistro } from "./Registro.js"; // Importando os componentes estilizados
 
 const Registro = () => {
-  return(
-    <main className="Pagina_registro">
-      <Navbar/>
-      <Formulario_Registro/>
-    </main>
-  )
-}
-export default Registro
+  return (
+    <>
+      <Navbar />
+      <SessaoRegistro>
+        <Formulario_Registro />
+      </SessaoRegistro>
+    </>
+  );
+};
+
+export default Registro;

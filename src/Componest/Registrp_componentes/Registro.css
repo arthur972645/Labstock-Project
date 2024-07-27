@@ -1,7 +1,6 @@
 /* App.css */
 
-.formulario-container {
-  border: 2px solid red;
+.formulario-container{
   max-width: 800px;
   padding: 20px;
   border-radius: 5px;
@@ -18,20 +17,20 @@
   font-weight: lighter;
 }
 
-.formulario {
-  
+.formulario_registro{
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 5%  ;
 }
 
-.formulario label {
+.formulario_registro label {
   font-weight: 500;
 }
 
-.formulario input,
-.formulario select,
-.formulario textarea {
+.formulario_registro input,
+.formulario_registro select,
+.formulario_registro textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -40,7 +39,7 @@
   width: 100%;
 }
 
-.formulario select {
+.formulario_registro select {
   appearance: none;
   background-color: white;
   background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.293 7.293a1 1 0 0 0-1.414 0L10 11.586 5.707 7.293a1 1 0 1 0-1.414 1.414l5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 0 0 0-1.414z"/></svg>');
@@ -59,22 +58,26 @@
 .horario {
   flex: 1;
 }
-
-.formulario button {
-  padding: 10px 20px;
+.sessao_btn_registro{
+  display: flex;
+  justify-content: center;
+}
+.Button_registro{
   background-color: #194d26;
-  color: white;
   border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 16px;
+  color: white;
   font-weight: 700;
-  width: fit-content;
-  align-self: flex-end;
+  width: 90% !important;
+  height: 40px !important;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.formulario button:hover {
-  background-color: #2d8034;
+.Button_registro:hover {
+  transform: scale(1.1);
+  background-color: #2D8034;
 }
 
 .mensagem-enviada {

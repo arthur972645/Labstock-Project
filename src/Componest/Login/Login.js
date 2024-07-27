@@ -36,21 +36,24 @@ export const Logo = styled.img`
 `
 
 export const Box_Inputs = styled.div`
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 `
 export const Box_Input_Senha = styled.div`
   margin-top: 25px;
 `
 export const Input = styled.input`
-border: none;
+ border: none;
  border-bottom: 2px solid black;
  outline: none;
  width: 100%;
  transition: 0.3s ease;
  margin-top: 15px;
- opacity: 30%;
+ color: black;
+ font-weight: 500;
+ font-size: 15px;
  background-color: #ffffff;
+ 
 
  &:hover{
  border-bottom-color: #2D8034 ;
@@ -68,5 +71,5 @@ border: none;
   /* border: 2px solid red; */
   max-width: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 `
