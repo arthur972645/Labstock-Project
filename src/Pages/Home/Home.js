@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-export const SessaoFormularioAgendamento = styled.section`
-  padding-top: 100px;
-`;
-
-export const SessaoFooter = styled.footer`
+export const SessaoFooter = styled.section`
   margin-top: 200px;
 `
 
+export const SessaoHome = styled.section`
+  margin-top: 120px;
+`
 export const CorFundo = styled.section`
   background-color: #EFEFEF;
 `

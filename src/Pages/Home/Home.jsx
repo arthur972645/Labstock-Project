@@ -1,18 +1,23 @@
+import React from "react";
 import Navbar from "../../Componest/Navbar/Navbar.jsx"
+import Footer from "../../Componest/Footer/Footer.jsx";
+import Home_components from "../../Componest/Home_components/Home_components.jsx";
+import { SessaoFooter, SessaoHome, CorFundo } from "./Home.js"; 
+
+
 
 const Home = () => {
   return(
-    <section className="Home">
-      <div className="Navbar">
-        <Navbar/>
-      </div>
-      <main className="Main">
-        {/* Main */}
-      </main>
-      <footer className="Footer">
-        {/* Footer */}
-      </footer>
-    </section>
+    <CorFundo>
+      <Navbar/>
+      <SessaoHome>
+        <Home_components/>
+      </SessaoHome>
+      <SessaoFooter>
+        <Footer/>
+      </SessaoFooter>
+      
+    </CorFundo>
     
   )
 }

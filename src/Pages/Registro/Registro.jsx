@@ -1,16 +1,20 @@
-import React from "react";
+import React from 'react';
 import Navbar from "../../Componest/Navbar/Navbar.jsx";
 import Formulario_Registro from "../../Componest/Registrp_componentes/Registro_Componentes";
-import { SessaoRegistro } from "./Registro.js"; // Importando os componentes estilizados
+import Footer from "../../Componest/Footer/Footer.jsx"
+import {  SessaoRegistro, SessaoFooter, CorFundo} from './Registro.js'; // Importando os componentes estilizados
 
 const Registro = () => {
   return (
-    <>
+    <CorFundo>
       <Navbar />
       <SessaoRegistro>
         <Formulario_Registro />
       </SessaoRegistro>
-    </>
+      <SessaoFooter>
+        <Footer/>
+      </SessaoFooter>
+      </CorFundo>
   );
 };
 

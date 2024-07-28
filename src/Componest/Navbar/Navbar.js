@@ -10,7 +10,8 @@ export const Sessao_navbar = styled.section`
   display: flex;
   justify-content: center;
   padding: 10px;
-   /* Cor de fundo da navbar */
+  background-color: #EFEFEF;
+  
 `;
 
 export const Box_navbar = styled.section`

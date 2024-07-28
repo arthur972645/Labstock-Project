@@ -28,13 +28,12 @@ export const TextoEquipamentos = styled.div`
     margin-top: 3%;
 `
 export const BoxEquipametos = styled.div`
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
 `
 export const BoxTrioEquipamentos = styled.div`
-    background-color: ${Cores.Branco};
+    background-color: #EFEFEF;
     display: flex;
     flex-direction: row;
     justify-content: center;
