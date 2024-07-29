@@ -62,7 +62,15 @@
   display: flex;
   justify-content: center;
 }
-.Button_registro{
+.laboratorio{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+.button-registro{
   background-color: #194d26;
   border: none;
   color: white;
@@ -70,12 +78,16 @@
   width: 90% !important;
   height: 40px !important;
   transition: 0.3s ease;
-  border-radius: 10px;
+  border-radius: 10px !important;
   height: 30px;
   cursor: pointer;
 }
+.sessao-btn{
+  display: flex;
+  justify-content: center;
+}
 
-.Button_registro:hover {
+.button-registro:hover {
   transform: scale(1.1);
   background-color: #2D8034;
 }

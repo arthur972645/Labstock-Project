@@ -5,7 +5,7 @@ export const SessaoRegistro = styled.section`
 `;
 
 export const SessaoFooter = styled.footer`
-  margin-top: 200px;
+  margin-top: 300px;
 `
 export const CorFundo = styled.section`
   background-color: #EFEFEF;

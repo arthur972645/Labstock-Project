@@ -8,6 +8,8 @@ const Cores = {
 export const SessaoFooter = styled.section`
     display: flex;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 `
 export const BoxFooter = styled.div`
     color: ${Cores.Branco};
@@ -20,7 +22,7 @@ export const BoxFooter = styled.div`
     padding: 20px;
 `
 export const TextFooter = styled.h1`
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 `
 export const BoxDevs = styled.section`
@@ -40,7 +42,7 @@ export const TextContato = styled.a`
     font-size: 18px;
 `
 export const LinkContato = styled.li`
-font-size: 19px;
+font-size: 15px;
 padding: 0.5px;
 `
 export const Copyright = styled.p`

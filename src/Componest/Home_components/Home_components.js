@@ -5,6 +5,7 @@ export const Texto =  styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height:200px;
 `
 
 export const Titulo1 = styled.div`
@@ -20,5 +21,7 @@ export const Subtitulo1 = styled.div`
 `
 
 export const SessaoBoxHome = styled.section`
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
 `

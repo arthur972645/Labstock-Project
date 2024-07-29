@@ -1,8 +1,11 @@
 import { useState } from "react";
 import dayjs from "dayjs";
+import emailjs from 'emailjs-com';
 import "./Registro.css";
 
-const Registro = () => {
+emailjs.init("1mVDNqXj8B9uDcnxQ");
+
+const Registro= () => {
   const [formData, setFormData] = useState({
     nome: "",
     laboratorio: "",
@@ -38,10 +41,22 @@ const Registro = () => {
       ];
       setSelectedDays({ ...selectedDays, [day]: newTimes });
       console.log(formData);
+
+      sendEmail(); 
       clearForm();
     } else {
       console.log("Formulário inválido. Por favor, corrija os erros.");
     }
+  };
+
+  const sendEmail = () => {
+    emailjs.send('service_3ecqa6l', 'template_hi4pbk4', formData)
+      .then((response) => {
+        console.log('Email enviado com sucesso:', response);
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar o email:', error);
+      });
   };
 
   const formIsValid = () => {
@@ -50,8 +65,7 @@ const Registro = () => {
 
     // Validar campo de NOME
     if (!formData.nome) {
-      errors.nome =
-        "Por favor, informe o nome do responsável pelo agendamento.";
+      errors.nome = "Por favor, informe o nome do responsável pelo agendamento.";
       isValid = false;
     }
 
@@ -68,8 +82,7 @@ const Registro = () => {
     } else {
       const day = dayjs(formData.dia).format("YYYY-MM-DD");
       if (selectedDays[day] && selectedDays[day].length >= 2) {
-        errors.dia =
-          "Não é possível agendar mais de dois horários no mesmo dia.";
+        errors.dia = "Não é possível agendar mais de dois horários no mesmo dia.";
         isValid = false;
       }
     }
@@ -91,23 +104,18 @@ const Registro = () => {
 
     // Validar campo de MATERIAL UTILIZADO
     if (!formData.materiaisUtilizados) {
-      errors.materiaisUtilizados =
-        "Por favor, informe os materiais utilizados.";
+      errors.materiaisUtilizados = "Por favor, informe os materiais utilizados.";
       isValid = false;
     }
 
     // Validar campo de MATERIAL DANIFICADO
     if (!formData.algumMaterialFoiDanificado) {
-      errors.algumMaterialFoiDanificado =
-        "Por favor, informe se algum material foi danificado.";
+      errors.algumMaterialFoiDanificado = "Por favor, informe se algum material foi danificado.";
       isValid = false;
     }
 
     // Validar campo de QUAL MATERIAL FOI DANIFICADO
-    if (
-      formData.algumMaterialFoiDanificado === "sim" &&
-      !formData.qualMaterial
-    ) {
+    if (formData.algumMaterialFoiDanificado === "sim" && !formData.qualMaterial) {
       errors.qualMaterial = "Por favor, informe qual material foi danificado.";
       isValid = false;
     }
@@ -120,8 +128,7 @@ const Registro = () => {
 
     // Validar campo de MATERIAL EM USO
     if (!formData.permaneceEmUso) {
-      errors.permaneceEmUso =
-        "Por favor, informe se algum material permanece em uso.";
+      errors.permaneceEmUso = "Por favor, informe se algum material permanece em uso.";
       isValid = false;
     }
 
@@ -138,12 +145,8 @@ const Registro = () => {
     }
 
     // Validar campo de MOTIVO DA UTILIZAÇÃO PROLONGADA
-    if (
-      formData.permaneceEmUso === "sim" &&
-      !formData.motivoUtilizacaoProlongada
-    ) {
-      errors.motivoUtilizacaoProlongada =
-        "Por favor, informe o motivo da utilização prolongada.";
+    if (formData.permaneceEmUso === "sim" && !formData.motivoUtilizacaoProlongada) {
+      errors.motivoUtilizacaoProlongada = "Por favor, informe o motivo da utilização prolongada.";
       isValid = false;
     }
 
@@ -179,7 +182,7 @@ const Registro = () => {
         relacionadas com as atividades realizadas no laboratório como, data da
         utilização e materiais utilizados.
       </h4>
-      <form onSubmit={handleSubmit} className="formulario_registro">
+      <form onSubmit={handleSubmit} className="formulario">
         <label>
           Nome do responsável pelo agendamento do laboratório:
           <input
@@ -195,7 +198,7 @@ const Registro = () => {
         <label>
           Laboratório utilizado:
           <select
-            name="laboratorio"
+            className="laboratorio"
             value={formData.laboratorio}
             onChange={handleChange}
             required
@@ -276,6 +279,7 @@ const Registro = () => {
             <label>
               Algum material foi danificado?
               <select
+              className="laboratorio"
                 name="algumMaterialFoiDanificado"
                 value={formData.algumMaterialFoiDanificado}
                 onChange={handleChange}
@@ -334,6 +338,7 @@ const Registro = () => {
             value={formData.permaneceEmUso}
             onChange={handleChange}
             required
+            className="laboratorio"
           >
             <option value="">Selecione</option>
             <option value="sim">Sim</option>
@@ -411,11 +416,10 @@ const Registro = () => {
           )}
         </label>
         <br />
-        <div className="sessao_btn_registro">
-          <button className="Button_registro" type="submit">
-            Enviar
-          </button>
+        <div className="sessao-btn"> 
+          <button className="button-registro" type="submit">Enviar</button>    
         </div>
+        
       </form>
     </div>
   );
