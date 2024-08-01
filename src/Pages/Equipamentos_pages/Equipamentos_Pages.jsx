@@ -6,7 +6,7 @@ import Footer from "../../Componest/Footer/Footer.jsx";
 
 const Equipamentos_P = () => {
   return (
-    <CorFundo>
+    <>
       <Navbar />
       <SessaoEquipamentos>
         <Equipamentos />
@@ -14,7 +14,7 @@ const Equipamentos_P = () => {
       <SessaoFooter>
         <Footer/>
       </SessaoFooter>
-    </CorFundo>
+      </>
   );
 };
 

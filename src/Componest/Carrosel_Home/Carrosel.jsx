@@ -1,7 +1,7 @@
 import './Carrosel.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { EffectFade } from 'swiper/modules';
-import {CarouselContainer, SlideImage} from './Carrosel.js'
+import {CarouselContainer, SlideImage, SessaoCarrosel2} from './Carrosel.js'
 
 const Carrosel = () => {
 
@@ -12,6 +12,7 @@ const Carrosel = () => {
   ]
 
   return(
+    <SessaoCarrosel2>
     <CarouselContainer>
       
       <Swiper
@@ -28,6 +29,7 @@ const Carrosel = () => {
         ))}
       </Swiper>
     </CarouselContainer>
+    </SessaoCarrosel2>
   )
 }
 export default Carrosel

@@ -6,7 +6,7 @@ import { SessaoFormularioAgendamento, SessaoFooter,CorFundo } from "./Agendament
 
 const Agendamento = () => {
   return (
-    <CorFundo>
+    <>
       <Navbar />
       <SessaoFormularioAgendamento>
         <FormularioAgendamento />
@@ -14,7 +14,7 @@ const Agendamento = () => {
       <SessaoFooter>
         <Footer/>
       </SessaoFooter>
-    </CorFundo>
+      </>
   );
 };
 

@@ -1,6 +1,6 @@
 import BoxHome from "../BoxHome/BoxHome.jsx"
 import Carrosol from "../Carrosel_Home/Carrosel.jsx"
-import {Texto, Titulo1, Subtitulo1, SessaoBoxHome} from './Home_components.js'
+import {Texto, Titulo1, Subtitulo1, SessaoBoxHome, SessaoCorrel} from './Home_components.js'
 
 const Home_components = () => {
   return(
@@ -13,9 +13,9 @@ const Home_components = () => {
           <p>Descubra uma novo modo de gerenciamento dos laboratórios de ciências com o LABSTOCK, o software focado para organização e controle das atividades laboratoriais.</p>
         </Subtitulo1>
       </Texto>
-      <section className="Carrosel">
+      <SessaoCorrel>
         <Carrosol/>
-      </section>
+      </SessaoCorrel>
       <SessaoBoxHome>
         <BoxHome/>
       </SessaoBoxHome>  

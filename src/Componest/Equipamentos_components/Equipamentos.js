@@ -33,8 +33,7 @@ export const BoxEquipametos = styled.div`
     justify-content: center;
 `
 export const BoxTrioEquipamentos = styled.div`
-    background-color: #EFEFEF;
-    display: flex;
+     display: flex;
     flex-direction: row;
     justify-content: center;
 `

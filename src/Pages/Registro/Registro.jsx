@@ -6,7 +6,7 @@ import {  SessaoRegistro, SessaoFooter, CorFundo} from './Registro.js'; // Impor
 
 const Registro = () => {
   return (
-    <CorFundo>
+    <>
       <Navbar />
       <SessaoRegistro>
         <Formulario_Registro />
@@ -14,7 +14,7 @@ const Registro = () => {
       <SessaoFooter>
         <Footer/>
       </SessaoFooter>
-      </CorFundo>
+      </>
   );
 };
 

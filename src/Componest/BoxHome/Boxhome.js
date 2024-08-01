@@ -10,17 +10,18 @@ const Cores = {
 }
 
 export const SessaoBoxHome = styled.section`
+    border: 2px solid red;
     display: flex;
-    padding: 10px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+   
 `
 export const BoxTrio = styled.div`
     border-radius: 20px;
-    width: 75%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    
+    
 `
 export const BoxPage = styled.section`
     background-color: ${Cores.Branco};
@@ -59,7 +60,7 @@ export const BotaoBox = styled(Link)`
     width: 50%;
     padding: 8px;
     transition: background-color 0.3s ease;
-    border-radius: 15px;
+    border-radius: 8px;
     border: none ;
     background-color: ${Cores.VerdeEscuro};
     color: ${Cores.Branco};

@@ -8,7 +8,7 @@ import { SessaoFooter, SessaoHome, CorFundo } from "./Home.js";
 
 const Home = () => {
   return(
-    <CorFundo>
+  <>
       <Navbar/>
       <SessaoHome>
         <Home_components/>
@@ -16,8 +16,8 @@ const Home = () => {
       <SessaoFooter>
         <Footer/>
       </SessaoFooter>
-      
-    </CorFundo>
+    </>  
+   
     
   )
 }
