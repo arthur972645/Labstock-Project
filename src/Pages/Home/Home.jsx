@@ -4,8 +4,6 @@ import Footer from "../../Componest/Footer/Footer.jsx";
 import Home_components from "../../Componest/Home_components/Home_components.jsx";
 import { SessaoFooter, SessaoHome, CorFundo } from "./Home.js"; 
 
-
-
 const Home = () => {
   return(
   <>

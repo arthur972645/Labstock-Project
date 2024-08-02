@@ -4,7 +4,7 @@
 }
 .subTitle01 {
   font-size: 17px;
-  font-weight: 400 !important; /* Força a aplicação do estilo */
+  font-weight: 400 !important; 
 }
 .formulario-container {
   max-width: 800px;
@@ -13,7 +13,6 @@
   border-radius: 5px;
 }
 .formulario {
-  /* border: 2px solid red ; */
   padding-top: 15px;
   display: flex;
   justify-content: start;

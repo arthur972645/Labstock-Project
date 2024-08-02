@@ -11,7 +11,7 @@ export const Sessao_navbar = styled.section`
   justify-content: center;
   padding-top: 10px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     width: 100%;
     padding-top: 0px;
   }
@@ -27,7 +27,7 @@ export const Box_navbar = styled.section`
   justify-content: space-between;
   box-shadow: 9px 8px 13px -5px rgba(0,0,0,0.52);
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     width: 100%;
     border-radius: 0px;
   }
@@ -39,9 +39,9 @@ export const Box_caminho = styled.div`
   justify-content: space-around;
   width: 1300px;
 
-  @media (max-width: 400px) {
-    flex-direction: column; /* Altera a direção para coluna */
-    align-items: flex-start; /* Alinha os itens ao início */
+  @media (max-width: 700px) {
+    flex-direction: column; 
+    align-items: flex-start; 
     width: 100%;
   }
 `;
@@ -58,8 +58,7 @@ export const Rotas_Styled_Link = styled(Link)`
     color: #64BA6B;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     font-size: 14px;
   }
-
 `;

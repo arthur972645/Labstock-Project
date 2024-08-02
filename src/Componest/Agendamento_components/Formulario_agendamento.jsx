@@ -18,7 +18,7 @@ const FormularioAgendamento = () => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevenir o comportamento padrão do formulário
+    event.preventDefault(); 
     if (formValido()) {
       console.log(formData);
       clearForm();
